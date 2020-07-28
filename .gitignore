@@ -8,3 +8,4 @@ build/
 # env
 env.development.local
 env.production.local
+data/
