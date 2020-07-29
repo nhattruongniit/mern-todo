@@ -5,6 +5,7 @@
 - react
 - bootstrap
 - formik
+- react-error-boundary
 
 ## BE Stack
 
@@ -33,7 +34,6 @@ $ npm start
 # build for production with minify
 $ npm run build
 ```
-
 
 ```bash
 # Server: http://localhost:27017
