@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function TodosList() {
-  return (
-    <div>
-      this is todos list
-    </div>
-  )
+  return <div>this is todos list</div>;
 }
 
 export default TodosList;
