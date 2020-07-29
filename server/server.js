@@ -63,6 +63,12 @@ todoRoutes.route('/update/:id').post(function(req, res) {
   })
 })
 
+todoRoutes.route('/remove/:id').post(function(req, res) {
+  const id = req.params.id;
+  TodoSchema.findOneAndRemove({ _id: id}).then(() => {
+    res.status(200).json({ message: 'delete successfully'})
+  })
+})
 
 todoRoutes.route('/add').post(function (req, res) {
   const todo = new TodoSchema(req.body);

@@ -25,7 +25,6 @@ const DefaultPage = ({ children }) => {
   useEffect(() => {
     async function sendLogWhenOnlineAgain() {
       const hasLogOffline = await forageErrorLog.getItem("errorLog");
-      console.log("getLogOffline", JSON.parse(hasLogOffline));
       if (window.navigator.onLine && hasLogOffline) {
         sendLog();
       }
@@ -54,8 +53,6 @@ const DefaultPage = ({ children }) => {
       </div>
     );
   }
-
-  console.log(boundaryKey);
 
   return (
     <ErrorBoundary

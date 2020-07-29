@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 // feature
 import TodosList from "features/TodosList";
@@ -29,9 +29,14 @@ function App() {
               </ul>
             </div>
           </nav>
-          <Route path="/" exact component={TodosList} />
-          <Route path="/edit/:id" component={EditTodo} />
-          <Route path="/create" component={CreateTodo} />
+          <div style={{ marginTop: 10}}>
+
+          </div>
+          <Switch>
+            <Route path="/" exact component={TodosList} />
+            <Route path="/edit/:id" component={EditTodo} />
+            <Route path="/create" component={CreateTodo} />
+          </Switch>
         </div>
       </Router>
     </ErrorBoundary>

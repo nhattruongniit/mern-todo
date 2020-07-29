@@ -20,3 +20,19 @@ code {
 .invalid-feedback {
   display: block
 }
+
+.completed td:not(:last-child) {
+  text-decoration: line-through;
+}
+
+.form-check-label {
+  cursor: pointer;
+}
+
+.table tr td button {
+  padding: 0;
+  outline: none;
+}
+.table tr td button + button {
+  padding-left: .75rem;
+}

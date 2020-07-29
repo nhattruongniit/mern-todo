@@ -23,7 +23,7 @@ function CreateTodo() {
   };
 
   return (
-    <div style={{ marginTop: 10 }}>
+    <div>
       <h3>Create New Todo</h3>
       {errorBoundary}
       <Formik
